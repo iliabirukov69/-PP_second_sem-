@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Matrix</class>
+ <widget class="QMainWindow" name="Matrix">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Матричный калькулятор</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>240</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Строки:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="rows_input"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Столбцы:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="cols_input"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="r_c_input_button">
+       <property name="text">
+        <string>Ввести размерности</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="Matrix_A">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>240</width>
+      <height>150</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="Matrix_B">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>140</y>
+      <width>240</width>
+      <height>150</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="out_M">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>240</width>
+      <height>150</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="inf">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>300</y>
+      <width>240</width>
+      <height>150</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="choice_A">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>135</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выбрать Матрицу А</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="choice_B">
+    <property name="geometry">
+     <rect>
+      <x>665</x>
+      <y>10</y>
+      <width>135</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выбрать Матрицу В</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="operator_ink_1">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>50</y>
+      <width>135</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Постфиксный (++M)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="operator_ink_2">
+    <property name="geometry">
+     <rect>
+      <x>665</x>
+      <y>50</y>
+      <width>135</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Префиксный (M++)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_M">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>100</y>
+      <width>280</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сложить матрицы (Вычислить)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="number_to_mult">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>160</y>
+      <width>280</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Введите число для умножения...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mult_n_M">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>195</y>
+      <width>280</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Умножить матрицу на число</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_out">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>300</y>
+      <width>280</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистить вывод</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_all">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>350</y>
+      <width>280</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистить всё</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
