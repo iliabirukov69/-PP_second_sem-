@@ -90,7 +90,7 @@ void Matrix::fill(int value) {
     }
 }
 
-// Перевод матрицы в стандартную строку для последующего вывода в GUI
+
 std::string Matrix::toString() const {
     if (isEmpty()) {
         return "Матрица пуста\n";
