@@ -20,7 +20,7 @@ public:
 
     void fill(int value);
 
-    // Вместо print() в консоль, метод теперь собирает матрицу в строку для окошка
+    
     std::string toString() const;
 
 private:
