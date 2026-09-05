@@ -15,4 +15,4 @@ public:
     double calculateDiagonal() const;
 };
 
-#endif // FUNCTIONS_H
+#endif 
